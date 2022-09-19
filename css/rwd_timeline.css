@@ -1,0 +1,203 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*,*:after,*:before {box-sizing: border-box; font-family: ''}
+
+body {width: 100%;font-family:'Bebas Neue';}
+a {text-decoration: none; color: #000;}
+
+header {/*display: flex;*/position: relative;width: 100%;
+      height: auto;}
+header h1 {/*justify-content: flex-start;*/float: left;}
+header h1 img {width: 100%;margin: 13px 5px 0 10px;}
+header button {background: none;border: none;text-align: right;
+        cursor: pointer;float: right; margin: 25px 8px 0 0;
+         } 
+header button img {width: 40%;}
+
+.cross {background: none; position: absolute; right: 8px; top: 8px;
+    color: #fff;border: 0; line-height: 45px;font-weight: normal;cursor: pointer;
+  outline: none; z-index: 100000;font-size: 3rem;}
+
+
+.hammenu {z-index: 100000;font-weight: bold; font-size: 1.1rem;height: 100%;
+    background: #000; position: fixed; width: 300px;top:64px; right: -300px;
+   }
+
+.hammenu ul {margin: 0;padding: 0;padding-top: 30px;height: 100%;font-weight: bold;}
+
+.hammenu li {padding: 10px 0; position: relative; text-indent: 30px; }
+.hammenu ul li a {color: #fff;}
+.hammenu li img {position: absolute; right: 10px;}
+
+.sub {text-align: center; font-size: 0.9rem; display: none;}
+.sub li {padding: 0;}
+.sub li a {padding: 3px 0; display: block;}      
+.sub a:hover {background: #fff; color: #333;}   
+
+
+#taa {width: 100%;margin: 0 auto; padding: 0 0 60px 15px;
+      background: #D7E7DB;text-align: center;}
+#taa h2 {font-family:'NGothic';padding: 30px 0 30px 0;
+       font-size: 1.6rem;}
+#taa .history {width: 80%;margin: 0 auto;}       
+#taa .history img{width: 100%;}             
+
+
+
+
+footer {width: 100%;background: #000;
+      text-align: center;}
+.snsicon {width: 100%;}
+.snsicon a {width: 20%;}
+.snsicon img {width: 10%;padding-right: 3%;
+      margin: 30px auto;max-width: 80px;}
+
+footer h2 {width: 100%;}
+footer h2 img {width: 30%;max-width: 200px;}
+
+.company {color: #fff;text-align: center;font-size: 12px;
+      margin-top: 20px;padding-bottom: 30px;}
+
+.one {margin-top: 15px;}    
+.two {margin-top: 15px;}  
+
+#topbtn {position: fixed; bottom: 120px;right: 10px;width: 11%;
+      cursor: pointer;}
+#topbtn img{width: 100%;}
+
+#tablet {display: none;}
+#mobile {display: none;}
+#pcfoot {display: none;}
+#fixedban {display: none;}
+#pct {display: none;}
+
+@media screen and (min-width:641px){
+   header button {display: none;}
+   header {display: none;}
+   .hammenu {display: none;}
+   #tablet {display: block;height: 145px;}
+   .line {display: none;}
+   #mobile {display: none;}
+   #pcfoot {display: none;}
+
+
+
+   #tablet h1 {width: 100%;text-align: center;}
+   #tablet h1 img {width: 30%;max-width: 200px;}
+   
+#tmenu {background: #fff;z-index: 10;}
+.navi {width: 100%; margin: 0 auto; height: 50px;}
+.navi > li {float: left; width: 25%; position: relative;
+    }
+.navi>li:last-child {border: none;}    
+.navi > li>a {display: block; line-height: 40px; color: #000; font-weight: bold;
+    text-align: center;}
+.navi > li:hover > a {background: #95BB9E; color: #fff;transition: all .4s;} 
+
+.sub1 {position: absolute; left: 0; top: 40px; display:none;
+   background:#fff; 
+   width: 100%;
+  z-index: 9999;}
+.navi > li:hover .sub1 {display: block;transition: all .4s;}
+.sub1 li a {display: block; height: 40px; line-height: 40px; 
+    text-decoration: none; color: #949494;text-align: center;} 
+.sub1 li a:hover {color: #000;transition: all .5s;}        
+
+#taa .history {width: 60%;margin: 0 auto;} 
+
+#topbtn {position: fixed; bottom: 100px;right: 20px;width: 6%;}
+
+@media screen and (min-width:999px){
+     #tablet {display: none;}
+     footer {display: none;}
+     #fixedban {display: block;}
+     #taa {display: none!important;}
+     #pct {display: block;}
+
+#mobile {display: block; width: 100%;margin: 0 auto;
+      height: 140px;}
+
+#mmenu {width: 83%;position: relative; margin: 0 auto;
+        background: #fff;z-index: 10;}
+#mmenu h1 img{position: absolute;width: 30%;
+           max-width: 180px;
+           top: 20px; left: 80px;}
+
+     
+.navi {width: 68%; margin: 0 auto; height: 70px;
+       position: absolute;right: 0;top: 80px;}
+
+.navi > li { width: 18%; position: relative;}
+
+
+
+.navi > li>a {display: block; line-height: 40px; color: #000; 
+      font-weight: bold; font-size: 17px;
+      text-align: center;}
+.navi .color a:after {content: ""; height: 2px; background:#000;
+        position: absolute;bottom: 0; left: 0;right: 100%;
+        transition: all 0.35s cubic-bezier(0.86,0,0.07,1);}
+        
+.navi .color a:hover:after {left: 0; right: 0;}        
+
+.navi > li:hover > a { background: transparent; color: #000;
+    transition: all .4s;} 
+
+.sub1 {position: absolute; left: 0; top: 40px; display:none;
+   background:transparent; 
+   width: 100%;
+  z-index: 9999;}
+
+.navi > li:hover .sub1 {display: block;transition: all .4s;}
+
+.sub1 li a {display: block; height: 40px; line-height: 40px; 
+    text-decoration: none; color: #000;text-align: center;} 
+
+.sub1 li a:hover {color: #000;transition: all .5s;
+       background: #090B4E;color: #fff;} 
+.select {margin-top: 8px;margin-left: 10px;}
+.select>select {width: 70px;border: none;
+         font-size: 17px;font-weight: bold;}       
+
+
+#pct {width: 100%;background: #D5DCE9;
+     margin: 0 auto;text-align: center;
+     padding-bottom: 130px;}
+#pct h2 {padding: 100px 0 120px 0!important;
+     font-size: 1.8rem; color: #090B4E;
+    font-family: 'NGothic';font-weight: bold;}
+#pct .history2 {width: 70%;margin: 0 auto;}
+#pct .history2 img {width: 100%;}        
+
+
+
+
+#pcfoot {display: block;background: black;
+   width: 100%;
+      }
+#pcfoot .wrap {width: 85%;margin: 0 auto; text-align: center;}      
+.snsicon1 {width: 40%; float: right;margin-top: 20px;
+        text-align: right;}
+.snsicon1 a {width: 20%;}
+.snsicon1 img {width: 13%; padding-right: 20px;
+         min-width: 55px; }
+
+
+      
+#pcfoot h2 {width: 40%;float: left;margin-top: 30px;
+        text-align: left;}
+#pcfoot h2 img {width: 50%;}
+      
+.company {color: #fff;text-align: right;font-size: 14px;
+       clear: both;position: relative;top: -20px;}
+      
+.one {margin-top: 15px;}    
+.two {margin-top: 15px;}  
+
+#fixedban {position: absolute; top: 150px; right: 0;}
+#fixedban img {width: 80%;}
+
+#topbtn {position: fixed; bottom: 120px;right: 40px;width: 3%;}
+}
